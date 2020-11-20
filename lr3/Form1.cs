@@ -16,5 +16,10 @@ namespace lr3
         {
             InitializeComponent();
         }
+
+
+
+        //label1.Text = String.Format("Вы выбрали: {0}", dateTimePicker1.Text);
+        //для даты
     }
 }

@@ -13,4 +13,5 @@ namespace lr3
         public int counttasks;//кількість призначених задач
         public bool ready;//готовність до роботи
     }
+
 }
