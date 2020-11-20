@@ -17,6 +17,19 @@ namespace lr3
             InitializeComponent();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AddTask newForm = new AddTask();
+            newForm.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AddPC newForm = new AddPC();
+            newForm.Show();
+        }
+
+
 
 
         //label1.Text = String.Format("Вы выбрали: {0}", dateTimePicker1.Text);

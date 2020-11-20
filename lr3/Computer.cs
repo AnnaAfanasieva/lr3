@@ -14,4 +14,6 @@ namespace lr3
         public bool ready;//готовність до роботи
     }
 
+
+
 }
