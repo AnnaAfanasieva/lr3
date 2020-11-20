@@ -12,9 +12,7 @@ namespace lr3
         public List<Computer> tasks;//список призначених задач
         public int counttasks;//кількість призначених задач
         public bool ready;//готовність до роботи
-        public int hour;
-        public int minutes;
-        public int sec;
+        
 
         public Computer(string compnames, List<Computer> tasks, int counttasks, bool ready)
         {

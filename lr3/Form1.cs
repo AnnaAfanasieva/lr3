@@ -18,13 +18,13 @@ namespace lr3
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) //открыть форму добавления задач
         {
             AddTask newForm = new AddTask();
             newForm.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e) //открыть форму добавления ПК
         {
             AddPC newForm = new AddPC();
             newForm.Show();
