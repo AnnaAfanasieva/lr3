@@ -8,12 +8,25 @@ namespace lr3
 {
     class Computer
     {
-        public int compnames;//название компьютера
+        public string compnames;//название компьютера
         public List<Computer> tasks;//список призначених задач
         public int counttasks;//кількість призначених задач
         public bool ready;//готовність до роботи
+        public int hour;
+        public int minutes;
+        public int sec;
+
+        public Computer(string compnames, List<Computer> tasks, int counttasks, bool ready)
+        {
+            this.compnames = compnames;
+            this.tasks = tasks;
+            this.counttasks = counttasks;
+            this.ready = ready;
+        }
+
+
     }
 
-
+   
 
 }
