@@ -29,7 +29,7 @@ namespace lr3
             this.taskname = taskname;
             this.done = done;
         }
-        public void dotask ()
+        public void dotask1 ()
         {
             //окрас блока
             DateTime datedone = datedoing.AddHours(hour);
@@ -43,6 +43,19 @@ namespace lr3
             }
         }
 
+        public void dotask2()
+        {
+            //окрас блока
+            DateTime datedone = datedoing.AddHours(hour);
+            datedone = datedoing.AddMinutes(minutes);
+            datedone = datedoing.AddSeconds(sec);
+            if (DateTime.Now == datedone)
+            {
+                //окрас блока!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                done = true;
+                //удалить блок!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+            }
+        }
 
     }
 }

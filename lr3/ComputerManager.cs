@@ -19,7 +19,7 @@ namespace lr3
         //{
         //    computers.Add
         //}
-        
+
 
 
         //public void wifiadd ()

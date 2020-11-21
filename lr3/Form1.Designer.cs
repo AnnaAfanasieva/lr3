@@ -143,11 +143,13 @@
             // 
             // comboBoxComp
             // 
+            this.comboBoxComp.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxComp.FormattingEnabled = true;
             this.comboBoxComp.Location = new System.Drawing.Point(271, 43);
             this.comboBoxComp.Name = "comboBoxComp";
             this.comboBoxComp.Size = new System.Drawing.Size(121, 24);
             this.comboBoxComp.TabIndex = 17;
+            this.comboBoxComp.SelectedIndexChanged += new System.EventHandler(this.comboBoxComp_SelectedIndexChanged);
             // 
             // readiness
             // 
@@ -178,6 +180,8 @@
             // 
             // comboBoxTasks
             // 
+            this.comboBoxTasks.BackColor = System.Drawing.SystemColors.Window;
+            this.comboBoxTasks.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxTasks.FormattingEnabled = true;
             this.comboBoxTasks.Location = new System.Drawing.Point(271, 238);
             this.comboBoxTasks.Name = "comboBoxTasks";
