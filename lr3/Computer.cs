@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace lr3
 {
-    class Computer
+    public class Computer
     {
         public string compnames;//название компьютера
-        public List<Computer> tasks;//список призначених задач
+        public Dictionary<int, string> tasks;//список призначених задач
         public int counttasks;//кількість призначених задач
         public bool ready;//готовність до роботи
         
 
-        public Computer(string compnames, List<Computer> tasks, int counttasks, bool ready)
+        public Computer(string compnames, Dictionary<int, string> tasks, int counttasks, bool ready)
         {
             this.compnames = compnames;
             this.tasks = tasks;
@@ -22,7 +22,9 @@ namespace lr3
             this.ready = ready;
         }
 
-
+        public Computer()
+        {
+        }
     }
 
    

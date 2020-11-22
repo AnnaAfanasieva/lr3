@@ -10,20 +10,16 @@ using System.Windows.Forms;
 
 namespace lr3
 {
-    public partial class AddPC : Form
+    public partial class ChangeWifi : Form
     {
-
-        Computer comp;
-        public AddPC(Computer computer)
+        public ChangeWifi()
         {
-            comp = computer;
             InitializeComponent();
-
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            comp.compnames = textBox1.Text;
+            ComputerManager.wifipass = textBox2.Text;
             this.Close();
         }
     }
