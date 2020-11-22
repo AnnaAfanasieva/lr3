@@ -12,9 +12,12 @@ namespace lr3
 {
     public partial class AddTask : Form
     {
+        ComputerManager computerManager;
         public AddTask()
         {
             InitializeComponent();
+            computerManager = new ComputerManager();
+
         }
     }
 }

@@ -26,7 +26,14 @@ namespace lr3
             computerManager.computers.Add(new Computer("Computer3", new Dictionary<int, string>(), 0, true));
             computerManager.computers.Add(new Computer("Computer4", new Dictionary<int, string>(), 0, true));
             computerManager.computers.Add(new Computer("Computer5", new Dictionary<int, string>(), 0, true));
-            
+            computerManager.computers[0].tasks[0] = computerManager.taskslist[2];
+            computerManager.computers[1].tasks[0] = computerManager.taskslist[1];
+            computerManager.computers[1].tasks[1] = computerManager.taskslist[2];
+            computerManager.computers[2].tasks[0] = computerManager.taskslist[3];
+            computerManager.computers[3].tasks[0] = computerManager.taskslist[4];
+            computerManager.computers[4].tasks[0] = computerManager.taskslist[3];
+            computerManager.computers[4].tasks[1] = computerManager.taskslist[1];
+
             initForm();
         }
 
@@ -41,18 +48,25 @@ namespace lr3
             }
            listBoxComp.SelectedIndex = 0;
             i = 0;
-
-            comboBoxTasks.Items.Clear();
-            foreach (Computer computer in computerManager.computers)
-            {
-                //comboBoxTasks.Items.Add(computer.tasks);// Для тасков добавить
-            }
-            //comboBoxTasks.SelectedIndex = 0;// Для тасков добавить
+            
+            i = 0;
+            initTasks();
+            
             wifipassword.Text = computerManager.wifipassword;
             //////////////////
             countcomp.Text = computerManager.computers.Count.ToString();
         }
 
+        private void initTasks()
+        {
+            int i = 0;
+            listBoxTasks.Items.Clear();
+            for (int j = 0; j < computerManager.computers[listBoxComp.SelectedIndex].tasks.Count; j++)
+            {
+                listBoxTasks.Items.Insert(i, computerManager.computers[listBoxComp.SelectedIndex].tasks[j]);// Для тасков добавить
+                i++;
+            }
+        }
 
         private void button1_Click(object sender, EventArgs e) //открыть форму добавления задач
         {
@@ -102,6 +116,17 @@ namespace lr3
             {
                 readiness.Text = "не готов";
             }
+            initTasks();
+            //int i = 0;
+            //listBoxTasks.Items.Clear();
+            // for (int j = 0; j < computerManager.computers[listBoxComp.SelectedIndex].tasks.Count; j++)
+            //    {
+            //        listBoxTasks.Items.Insert(i, computerManager.computers[listBoxComp.SelectedIndex].tasks[j]);// Для тасков добавить
+            //        i++;
+            //    }
+            //    i = 0;
+
+
         }
 
         //label1.Text = String.Format("Вы выбрали: {0}", dateTimePicker1.Text);

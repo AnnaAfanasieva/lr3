@@ -41,7 +41,6 @@
             this.readiness = new System.Windows.Forms.Label();
             this.countcomp = new System.Windows.Forms.Label();
             this.counttask = new System.Windows.Forms.Label();
-            this.comboBoxTasks = new System.Windows.Forms.ComboBox();
             this.wifi = new System.Windows.Forms.Label();
             this.wifipassword = new System.Windows.Forms.Label();
             this.wifiChange = new System.Windows.Forms.Button();
@@ -126,7 +125,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(458, 412);
+            this.button1.Location = new System.Drawing.Point(444, 425);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(197, 39);
             this.button1.TabIndex = 15;
@@ -136,7 +135,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(159, 412);
+            this.button2.Location = new System.Drawing.Point(159, 425);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(197, 39);
             this.button2.TabIndex = 16;
@@ -170,16 +169,6 @@
             this.counttask.Size = new System.Drawing.Size(51, 17);
             this.counttask.TabIndex = 20;
             this.counttask.Text = "waiting";
-            // 
-            // comboBoxTasks
-            // 
-            this.comboBoxTasks.BackColor = System.Drawing.SystemColors.Window;
-            this.comboBoxTasks.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxTasks.FormattingEnabled = true;
-            this.comboBoxTasks.Location = new System.Drawing.Point(296, 12);
-            this.comboBoxTasks.Name = "comboBoxTasks";
-            this.comboBoxTasks.Size = new System.Drawing.Size(121, 24);
-            this.comboBoxTasks.TabIndex = 21;
             // 
             // wifi
             // 
@@ -249,7 +238,6 @@
             this.Controls.Add(this.wifiChange);
             this.Controls.Add(this.wifipassword);
             this.Controls.Add(this.wifi);
-            this.Controls.Add(this.comboBoxTasks);
             this.Controls.Add(this.counttask);
             this.Controls.Add(this.countcomp);
             this.Controls.Add(this.readiness);
@@ -284,7 +272,6 @@
         private System.Windows.Forms.Label readiness;
         private System.Windows.Forms.Label countcomp;
         private System.Windows.Forms.Label counttask;
-        private System.Windows.Forms.ComboBox comboBoxTasks;
         private System.Windows.Forms.Label wifi;
         private System.Windows.Forms.Label wifipassword;
         private System.Windows.Forms.Button wifiChange;
